@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Games From This site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .progress {
+            background-color: blue;
+            height: 2px;
+            animation: load 2s ease-in-out 1;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0vw;
+
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+
+        header {
+            display: flex;
+            margin: 5px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+
+        header .left-header {
+            float: left;
+        }
+
+        header .left-header h1 {
+
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        header .right-header {
+            margin-top: 10px;
+            margin-left: 510px;
+        }
+
+        header .right-header input {
+            width: 250px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid darkslateblue;
+        }
+
+        .about-container {
+            margin: 20px 20px 0 0;
+            border: 5px solid #fff;
+            overflow: auto
+        }
+
+        .left-content {
+            float: left
+        }
+
+        .left-content img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+        }
+
+        .right-content {
+            margin-left: 210px;
+            font-size: 20px;
+        }
+
+        .right-content .text-title {
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 23px;
+            font: bolder;
+        }
+
+        #more {
+            display: none;
+        }
+
+        #myBtn {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsec {
+            display: none;
+        }
+
+        #myBtn-partsec {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsec:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partthd {
+            display: none;
+        }
+
+        #myBtn-partthd {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partthd:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partfrth {
+            display: none;
+        }
+
+        #myBtn-partfrth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partfrth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partffth {
+            display: none;
+        }
+
+        #myBtn-partffth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partffth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsixth {
+            display: none;
+        }
+
+        #myBtn-partsixth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsixth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsevnth {
+            display: none;
+        }
+
+        #myBtn-partsevnth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsevnth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-parteigth {
+            display: none;
+        }
+
+        #myBtn-parteigth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-parteigth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        .zombishoterproceed {
+            margin-left: 35vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+
+            padding: 5px;
+            border-radius: 6px;
+
+        }
+
+        .zombishoterproceed a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .zombishoterproceed a:hover {
+            text-decoration: none;
+            color: darkslateblue;
+        }
+
+        .zombishoterproceed:hover {
+            margin-left: 485px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+
+        }
+
+        .last-footer {
+            height: 40px;
+            background-color: black;
+            color: aliceblue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 1px;
+        }
+
+        .last-footer p {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .last-footer a {
+            text-decoration: underline;
+            color: red;
+        }
+
+        @media (max-width:947px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 200;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                margin-left: 350px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+        }
+
+        @media (max-width:690px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 200;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+
+        @media (max-width:500px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 80vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            header .right-header input {
+                width: 250px;
+                height: 30px;
+                font-size: 19px;
+                border: 1px solid darkslateblue;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 10px;
+            }
+
+            .right-content {
+                margin-left: 100px;
+                font-size: 17px;
+            }
+
+            .right-content .text-title {
+                font-weight: 150;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 18px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .last-footer {
+                height: 30px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsec() {
+            var dots = document.getElementById("dots-partsec");
+            var moreText = document.getElementById("more-partsec");
+            var btnText = document.getElementById("myBtn-partsec");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartthd() {
+            var dots = document.getElementById("dots-partthd");
+            var moreText = document.getElementById("more-partthd");
+            var btnText = document.getElementById("myBtn-partthd");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartfrth() {
+            var dots = document.getElementById("dots-partfrth");
+            var moreText = document.getElementById("more-partfrth");
+            var btnText = document.getElementById("myBtn-partfrth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartffth() {
+            var dots = document.getElementById("dots-partffth");
+            var moreText = document.getElementById("more-partffth");
+            var btnText = document.getElementById("myBtn-partffth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsixth() {
+            var dots = document.getElementById("dots-partsixth");
+            var moreText = document.getElementById("more-partsixth");
+            var btnText = document.getElementById("myBtn-partsixth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsevnth() {
+            var dots = document.getElementById("dots-partsevnth");
+            var moreText = document.getElementById("more-partsevnth");
+            var btnText = document.getElementById("myBtn-partsevnth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionparteigth() {
+            var dots = document.getElementById("dots-parteigth");
+            var moreText = document.getElementById("more-parteigth");
+            var btnText = document.getElementById("myBtn-parteigth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <div class="left-header">
+            <h1>Read And Download Games From Here</h1>
+        </div>
+        <div class="right-header"><input type="text" placeholder="Search.."></div>
+
+    </header>
+    <div class="about-container">
+        <div class="left-content">
+            <img src="zmbishtr logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Zombie Shooter </p>
+            <p class="text-content">Take part in the great battle to rescue humanity and find out what's happening! The
+                human race is in danger again.<span id="dots">...</span><span id="more"> This time scientists could not cope the imminent threat and became
+                    monsters themselves. Crowds of zombie people filled the secret research base. The dreadful contagion is
+                    about to spread earth wide. Use the last chance to save the humanity from total annihilation!
+    
+                    Find the answer to the main question - what caused the catastrophe? Who knows, maybe on the final stage
+                    you'll face something terrible?..
+    
+                    Try your monster fighting skills in two additional game modes - Survive and Gun Stand. Only these modes
+                    will really show how good you've become. About 1,000 monsters
+                    on each map,
+                    showing up to 100 monsters simultaneously on one playing screen
+                    10 missions and a survival mode
+                    Full-on-action male or female character
+                    Character upgrade facility
+                    9 weapons of mass destruction
+                    Red or Green blood selection
+                    Highly imaginative selection of enemies
+                    Reactive music which helps to drive the action
+                    Useful gadgets - flash lights, medkits, battle drones and radar.
+                    Select your perk. </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunction()" id="myBtn">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="zombieshooter.html">Click Here To Download Zombie Shooter </a></button>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="zmbishtr2 logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Zombie Shooter 2</p>
+            <p class="text-content">Zombie Shooter 2 is a unique blend of two game genres - Action and RPG. Every player
+                can choose a character to the liking, get experience to develop skills, earn money<span
+                    id="dots-partsec">...</span><span id="more-partsec"> and spend it at
+                        weapons, medications and useful devices. All of this will be used against thousands of enemies. The
+                        zombies fill the game screen, never letting you rest, even for a minute.
+        
+                        Imagine yourself coming to visit an unknown city and seeing it almost ruined, with all the citizens
+                        turned into zombies. What will you do? Call for help, organize a large-scale rescue campaign or Try to dig your way out of the situation, find
+                    out what happened and use your last chance to save the person you love! New project from the maker
+                    of the legendary Alien Shooter series.
+                    Huge crowds of enemies, more than 100 zombies on one map at a time.
+                    Ability to upgrade the main character's parameters.
+                    More than 60 weapon types, including sniper rifles.
+                    Lots of auxiliary devices, including radar and battle drones.
+                    Several types of vehicles to drive.
+                    Three game types: Campaign, Survive, Gun Stand.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsec()" id="myBtn-partsec">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="zombieshooter2.html">Click Here To Download Zombie Shooter
+            2</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+   
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="alien shooter logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Alien Shooter 1 </p>
+            <p class="text-content">Alien Shooter is an isometric, top-down shooter video game developed and released by
+                Sigma Team, a Russian games development studio.<span id="dots-partfrth">...</span><span id="more-partfrth"> Released on May 18, 2003, it was initially available on
+                    Microsoft Windows, iOS, and Android. The game's conclusion was realized in two expansion packs, both
+                    consisting of five-levels and released in 2014: Fight for Life, released on June 14, and The Experiment,
+                    released on September 22. Alien Shooter is
+                    presented in a top-down, third-person view (3/4 perspective), and takes place across nine levels of
+                    increasing difficulty. The main objective of each level is to eliminate all the aliens. To do so,
+                    players must access all of the areas that the level has to offer (by completing tasks such as
+                    reactivating power generators, destroying walls, and disabling force fields, etc.) and removing the
+                    alien threats within. Later levels feature teleportation devices, which spawn enemies indefinitely,
+                    and can only be destroyed by special explosives scattered throughout the level.
+
+                    Characters have five stats: Strength, Accuracy, Health, Flight, and Speed, and players have the
+                    option to play as either a male or a female character. Male characters have higher strength, can fly
+                    higher, and health stats, whereas female characters have improved accuracy and higher speed.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartfrth()" id="myBtn-partfrth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="alienshooter1.html">Click Here To Download Alien Shooter 1</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="alien shooter 2 logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Alien Shooter 2</p>
+            <p class="text-content">Alien Shooter 2: Reloaded is a large-scale sequel to the first part of Alien
+                Shooter. This is the unique alloy of arcade action and RPG elements which combines well-established
+                world of classical 
+
+               <span id="dots-partffth">...</span><span id="more-partffth">games and unmatched dynamics of the first part. Alien Shooter 2 - Reloaded is a modified version of the Alien Shooter 2 game. Sigma Team started
+                working on it right after release of Alien
+                    Shooter 2, taking into account the players' wishes: Size of the full version installation file was
+                    reduced to 300 Mb, compared to 1Gb of the original Alien Shooter 2. Large installation file
+                    prevented users with slow connection from buying and downloading the game. Player upgrade parameters
+                    simplified. Now you don't need to develop separate skills for each weapon type, so you'll be able to
+                    complete the game using all the weapon types featured in it. Two new missions added. Now the game
+                    features 17 full levels.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartffth()" id="myBtn-partffth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="alienshooter2.html">Click Here To Download Alien Shooter 2</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="all-evil-night-2 logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">All Evil Night 2 </p>
+            <p class="text-content">In All Evil Night 2 man-eating monsters are roaming the silent streets. In the
+                darkness, howling and shrill voices can be heard everywhere yet nothing can be seen.<span
+                    id="dots-partsixth">...</span><span id="more-partsixth"> Prepare yourself for a heart-throbbing
+                    action as you fire at oncoming man-eating monsters that threaten to eat you. Engage in a crazy
+                    gunfight as you fight for your survival. Never did you expect to pay such a painful price for the
+                    truth.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsixth()" id="myBtn-partsixth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="all_evil_night_2.html">Click Here To Download All Evil Nights
+            2</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="mad race logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Mad Race</p>
+            <p class="text-content">Mad Race is a back-to-basics type of racing video game that has a wide range of
+                weapons and other fun obstacles to impede a user’s progress.<span id="dots-partsevnth">...</span><span id="more-partsevnth">Part of what
+                    makes Mad Race so fun is that it'snot a realistic racing game. There are so many of those on the
+                    market, and when a game tries so hard to be “real,” it just ends up being a letdown when you realize
+                    that it's still lacking realism. Mad Race is a cartoonish adventure more than anything. It's like an
+                    older Micro Machine racer, and that's probably what Gametop was going for when they developed the
+                    game. The features are very arcade-like, and it does not take itself too seriously.
+
+                    The tracks are also anything but ordinary. While driving, you can pick up a range of different
+                    bonuses, including time bonuses, speed bonuses, and even weapons that you can use against the other
+                    drivers to try to knock them off the road.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsevnth()" id="myBtn-partsevnth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="mad race.html">Click Here To Download Mad Race for PC</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="toy defence logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Toy Defence 2</p>
+            <p class="text-content">Toy Defense 2 features stunning graphics and immersive environments that will
+                transport you to the battlefields of World War II. You'll fight in famous locations like Omaha Beach,
+                Stalingrad, and the Pacific Islands, and face a wide variety of enemy troops and bosses.<span
+                    id="dots-parteigth">...</span><span id="more-parteigth">If you're ready to take on the challenge and
+                    defend your base, download Toy Defense 2 now and join the battle. With its addictive gameplay,
+                    challenging missions, and stunning graphics, Toy Defense 2 is the perfect game for tower defense
+                    fans and strategy gamers alike.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionparteigth()" id="myBtn-parteigth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="toy defence.html">Click Here To Download Toy Defence - 2</a></button>
+    <div class="last-footer">
+        <p>Created By<a href="textglitch.html">Abdul Ahad</a>| &copy;All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

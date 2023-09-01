@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: white;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      width: 300px;
+    }
+
+    label {
+      color: white;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    input[type=submit],
+    input[type=button] {
+      background-color: #764ba2;
+      color: white;
+      width: 100%;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #5c3d87;
+    }
+
+    input[type=button]:hover {
+      background-color: #5c3d87;
+    }
+  </style>
+  <script>
+    function loginDone() {
+      alert("Submit First , We will contact you soon!")
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Register</h1>
+    <form action="mailto:ahadabdul9976@gmail.com" method="post" enctype="text/plain">
+      <div class="form-group">
+        <label for="username">Name</label>
+        <input type="text" id="username" name="Name" placeholder="Enter Name here" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Email</label>
+        <input type="Email" id="password" name="Email" placeholder="Enter Email" required>
+      </div>
+      <div class="form-group">
+        <label for="number">Phone</label>
+        <input type="number" id="password" name="number" placeholder="Enter Number" required>
+      </div>
+      <input type="submit" value="Submit" class="send">
+      <br>
+      <input type="button" value="Done" onclick="loginDone()">
+    </form>
+  </div>
+</body>
+
+</html>

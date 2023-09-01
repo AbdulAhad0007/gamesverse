@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Games From This site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .progress {
+            background-color: blue;
+            height: 2px;
+            animation: load 2s ease-in-out 1;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0vw;
+
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+
+        header {
+            display: flex;
+            margin: 5px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+
+        header .left-header {
+            float: left;
+        }
+
+        header .left-header h1 {
+
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        header .right-header {
+            margin-top: 10px;
+            margin-left: 510px;
+        }
+
+        header .right-header input {
+            width: 250px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid lightslategray;
+        }
+
+        .about-container {
+            margin: 20px 20px 0 0;
+            border: 5px solid #fff;
+            overflow: auto
+        }
+
+        .left-content {
+            float: left
+        }
+
+        .left-content img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+        }
+
+        .right-content {
+            margin-left: 210px;
+            font-size: 20px;
+        }
+
+        .right-content .text-title {
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 23px;
+            font: bolder;
+        }
+
+        #more {
+            display: none;
+        }
+
+        #myBtn {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-partsec {
+            display: none;
+        }
+
+        #myBtn-partsec {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsec:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-partthd {
+            display: none;
+        }
+
+        #myBtn-partthd {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partthd:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-partfrth {
+            display: none;
+        }
+
+        #myBtn-partfrth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partfrth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-partffth {
+            display: none;
+        }
+
+        #myBtn-partffth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partffth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-partsixth {
+            display: none;
+        }
+
+        #myBtn-partsixth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsixth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-partsevnth {
+            display: none;
+        }
+
+        #myBtn-partsevnth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsevnth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        #more-parteigth {
+            display: none;
+        }
+
+        #myBtn-parteigth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-parteigth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+        }
+
+        .bluestacksproceed {
+            margin-left: 33vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: lightslategray;
+
+            padding: 5px;
+            border-radius: 6px;
+
+        }
+
+        .bluestacksproceed a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .bluestacksproceed a:hover {
+            text-decoration: none;
+            color: lightslategray;
+        }
+
+        .bluestacksproceed:hover {
+            margin-left: 33vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: lightslategray;
+            padding: 5px;
+            border: 2px solid lightslategray;
+            border-radius: 6px;
+
+        }
+
+        .last-footer {
+            height: 40px;
+            background-color: black;
+            color: aliceblue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 1px;
+        }
+
+        .last-footer p {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .last-footer a {
+            text-decoration: underline;
+            color: red;
+        }
+
+        @media (max-width:1148px) {
+            header .right-header {
+                display: none;
+            }
+        }
+
+        @media (max-width:947px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 150;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            .bluestacksproceed {
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .bluestacksproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .bluestacksproceed a:hover {
+                text-decoration: none;
+                color: lightslategray;
+            }
+
+            .bluestacksproceed:hover {
+                font-size: 22px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+
+        @media (max-width:690px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 200;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+
+        @media (max-width:500px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 80vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            header .right-header input {
+                width: 250px;
+                height: 30px;
+                font-size: 19px;
+                border: 1px solid lightslategray;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 10px;
+            }
+
+            .right-content {
+                margin-left: 100px;
+                font-size: 17px;
+            }
+
+            .right-content .text-title {
+                font-weight: 150;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 18px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: lightslategray;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+            }
+
+            .bluestacksproceed {
+                margin-left: 100px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 150;
+                background-color: lightslategray;
+
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .bluestacksproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .bluestacksproceed a:hover {
+                text-decoration: none;
+                color: lightslategray;
+            }
+
+            .bluestacksproceed:hover {
+                margin-left: 100px;
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 150;
+                background-color: aliceblue;
+                color: lightslategray;
+                padding: 5px;
+                border: 2px solid lightslategray;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 30px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsec() {
+            var dots = document.getElementById("dots-partsec");
+            var moreText = document.getElementById("more-partsec");
+            var btnText = document.getElementById("myBtn-partsec");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartthd() {
+            var dots = document.getElementById("dots-partthd");
+            var moreText = document.getElementById("more-partthd");
+            var btnText = document.getElementById("myBtn-partthd");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartfrth() {
+            var dots = document.getElementById("dots-partfrth");
+            var moreText = document.getElementById("more-partfrth");
+            var btnText = document.getElementById("myBtn-partfrth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartffth() {
+            var dots = document.getElementById("dots-partffth");
+            var moreText = document.getElementById("more-partffth");
+            var btnText = document.getElementById("myBtn-partffth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsixth() {
+            var dots = document.getElementById("dots-partsixth");
+            var moreText = document.getElementById("more-partsixth");
+            var btnText = document.getElementById("myBtn-partsixth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsevnth() {
+            var dots = document.getElementById("dots-partsevnth");
+            var moreText = document.getElementById("more-partsevnth");
+            var btnText = document.getElementById("myBtn-partsevnth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <div class="left-header">
+            <h1>Download Best Android <mark>APK</mark> Games</h1>
+        </div>
+        <div class="right-header"><input type="text" placeholder="Search.."></div>
+
+    </header>
+    <div class="about-container">
+        <div class="left-content">
+            <img src="bluestacks.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Download - BlueStacks 5</p>
+            <p class="text-content">Bluestacks is used to run android games into your pc , you can also play them in
+                your android phone ...BlueStacks (also known as BlueStacks by now.gg, Inc.) is an American technology
+                company known for the BlueStacks App Player and other cloud-based cross-platform products. The
+                BlueStacks App Player allows Android applications to run on computers running Microsoft Windows or
+                macOS. The company was founded in 2009 by Jay Vaishnav, Suman Saraf, and Rosen Sharma.<span
+                    id="dots">...</span><span id="more">BlueStacks' primary source of revenue is from an Android
+                    emulator known as App Player. The software's basic features are free to download and use. Advanced
+                    optional features require a paid monthly subscription.[11] The company claims the App Player can run
+                    1.5 million Android apps as of November 2019.[12] As of February 2021, BlueStacks claimed its apps
+                    were downloaded over 1 billion times.[13] App Player features mouse, keyboard, and external
+                    touch-pad controls.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunction()" id="myBtn">Read more</button><br><br>
+    <button class="bluestacksproceed"><a href="BlueStacksInstaller_5.9.35.exe" download>Click Here To Download Original
+            BlueStacks</a></button>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="brainout logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Brain Out - Hack Mod Apk</p>
+            <p class="text-content">🔥“Brain Out” is an addictive free tricky puzzle game with a series of tricky brain
+                teasers and different riddles testing challenge your mind😝. It evaluates your logical think ability,
+                reflexes, accuracy, memory and creativity.
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="brain-out-hack-mod-apk.apk" download>Click here to Download mod apk For
+            brain out</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="cod heroes logo.jpeg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Call Of duty Heroes Hack Mod Apk</p>
+            <p class="text-content">Call of Duty: Heroes was a free-to-play mobile real-time strategy game published by
+                Activision and developed by Faceroll Games. The beta was launched on 14th August 2014. It was under an
+                exclusive beta launch for iOS users specifically from New Zealand and Australia along with a worldwide
+                release for Windows 8 tablets.<span id="dots-partthd">...</span><span id="more-partthd"><br>
+                    Take control of and level up iconic heroes from the Call of Duty franchise, including Call of Duty
+                    4: Modern Warfare, Call of Duty: Black Ops II, and more. Each hero has their own progression system
+                    and unique Killstreaks. <br><br>
+                    Train and specialize the player's army using units directly from Call of Duty, such as Juggernauts,
+                    Dragonfire Drones, and CLAWs. <br><br>
+                    Unleash Killstreaks such as the Drone Strike, UAVs, Care Packages, and Chopper Gunner to devastate
+                    opponents.
+                    Build and upgrade the player's base into a fortress with Sentry Guns, Guardians, SAM Turrets,
+                    Howitzers, Mines, and over 30 other upgradable structures. <br><br>
+                    Team up with the player's friends to form alliances, donate troops, and dominate enemies.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartthd()" id="myBtn-partthd">Read more</button><br><br>
+    <button class="bluestacksproceed"><a href="Call-of-Duty-Heroes-hack-mod.apk" download>Click Here To Download COD
+            Heroes mod apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="car parking multi logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Car Parking Multiplayer Hack Mod Apk</p>
+            <p class="text-content">Car Parking Multiplayer is a car parking simulation game developed by olzhass for
+                mobile play. In this 3D driving simulator game, you will be able to ride around various vehicles from
+                tow and pickup trucks to sport and classic cars. You will also face roughly about 82 real-life parking
+                and driving challenges. Moreover, it has a high-quality, detailed, and immersive open-world<span
+                    id="dots-partfrth">...</span><span id="more-partfrth">environment wherein you can freely roam around
+                    to explore a city that's full of movement and secrets. <br>
+                    This simulation game enables you to play in a multiplayer open-world mode. Under this mode, you will
+                    compete in a multiplayer racing game against real players. You can opt to exchange cars with
+                    thousands of actual players every day. On top of that, you can interact with players across the
+                    world in real-time through the friend list and voice chat feature.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartfrth()" id="myBtn-partfrth">Read more</button><br><br>
+    <button class="bluestacksproceed"><a href="car-parking-multiplayer-mod.apk" download>Click To Download Car parking
+            Multiplayer Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="doodle logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Doodle Alchemy hack mod apk</p>
+            <p class="text-content">Doodle Alchemy is a game with amazing graphics and effects. Off-beat music and
+                sounds create an unforgettable atmosphere! At the start, you have only 4 elements: air, water, earth,
+                and fire. Combine these elements and create new ones. A fascinating journey into the world of knowledge
+                awaits!<span id="dots-partffth">...</span><span id="more-partffth">Doodle Alchemy Answers, Cheats &
+                    Combinations. If you don’t know the answer for a certain Doodle level, check bellow. Find Below the
+                    complete solution and answers to the Doodle Alchemy.
+
+                    Use this simple cheat index to help you solve all the Doodle Levels Combinations.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartffth()" id="myBtn-partffth">Read more</button><br><br>
+    <button class="bluestacksproceed"><a href="doodle-alchemy-mod.apk" download>Click Here To Download Doodle Alchemy
+            Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gardenscapes logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Gardenscapes hack mod apk</p>
+            <p class="text-content">Gardenscapes (MOD, Unlimited Coins) - a classic three in a row with an interesting
+                storyline. Butler Austin decided to restore the abandoned mansion and return it to its original
+                appearance. The gameplay is simple enough, you need to move the same fruit in one row, as well as
+                perform a huge number of tasks. <span id="dots-partsixth">...</span><span id="more-partsixth"> Put
+                    things in order around the house, develop new areas and decorate the garden with different fountains
+                    and trees. The game Gardenscapes mod apk has beautiful graphics and many locations, which will
+                    create a pleasant atmosphere of pastime.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsixth()" id="myBtn-partsixth">Read more</button><br><br>
+    <button class="bluestacksproceed"><a href="gardenscapes-mod.apk" download>Click Here To Download Gardenscapes
+            Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gtavc.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto - Vice City hack mod apk</p>
+            <p class="text-content">It is an action-adventure game played from a third-person
+                perspective. The player controls criminal Tommy Vercetti and completes missions—linear scenarios with
+                set
+                objectives—to progress through the story. It is possible to have several missions available at a time,
+                as some
+                missions require the player to wait for further instructions or events. Outside of missions, the player
+                can
+                freely roam the game's open world and has the ability to complete optional side missions. Composed of
+                two main
+                islands and several smaller areas, the world is much larger in area than earlier entries in the
+                series.The
+                islands are unlocked for the player as the story progresses.<span id="dots-partsevnth">...</span><span
+                    id="more-partsevnth">The player
+                    may run, jump, or drive vehicles to navigate the game's world. The player uses melee attacks,
+                    firearms and
+                    explosives to fight enemies. The firearms include weapons such as the Colt Python, an M60 machine
+                    gun and a
+                    Minigun.The game's three-dimension environment allows a first-person view while aiming with the
+                    sniper rifle
+                    and rocket launcher. In addition, the game's combat allows the player to commit drive-by shootings
+                    by facing
+                    sideways in a vehicle. The game provides the player a wide variety of weapon options—they can be
+                    purchased
+                    from local firearms dealers, found on the ground, retrieved from dead enemies, or found around the
+                    city.
+
+                    In combat, auto-aim can be used as assistance against enemies.Should the player take damage, their
+                    health
+                    meter can be fully regenerated through the use of health pick-ups. Body armour can be used to absorb
+                    gunshots
+                    and explosive damage, but is used up in the process.When health is entirely depleted, gameplay stops
+                    and the
+                    player respawns at the nearest hospital while losing all weapons and armour and some of their money.
+                    If the
+                    player commits crimes while playing, the game's law enforcement agencies may respond as indicated by
+                    a
+                    "wanted" meter in the head-up display, which increases as the player commits more crimes.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsevnth()" id="myBtn-partsevnth">Read more</button><br><br>
+    <button class="bluestacksproceed"><a href="gta-vice-city-1_12-mod.apk" download>Click Here To Download Gardenscapes
+            Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="hillclimb logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Hill Climb racing hack mod apk</p>
+            <p class="text-content">Hill Climb Racing is a 2012 2D physics-based racing video game released by the
+                Finnish studio Fingersoft for Android, iOS, Microsoft Windows, and Windows Phone. It was originally
+                created by Toni Fingerroos, Fingersoft's founder, and is the company's best-known product. The player
+                controls a driver across hilly terrains, collecting coins along the way and spending them on vehicular
+                upgrades and on vehicles themselves while being watchful of the driver's head as well as the vehicle's
+                fuel supply.<span id="dots-partsixth"></span><span id="more-partsixth">The objective of Hill Climb
+                    Racing is to drive as far through progressively difficult racing stages as possible while collecting
+                    coins,taking advantage of the non-realistic physics and using only two simple controls: the Gas and
+                    Brake pedals.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="hill-climb-racing_v1.57mod_apk.apk" download>Click here To Download Hill
+            Climb Racing apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="indiancar simulator logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Indian Car Simulator hack mod apk</p>
+            <p class="text-content">Indian Cars Simulator 3D, coming from the developer Rohit Gaming Studio, is running
+                on Android systerm in the past.
+
+                Now, You can play Indian Cars Simulator 3D on PC with GameLoop smoothly.
+
+                Download it in the GameLoop library or search results. No more eyeing the battery or frustrating calls
+                at the wrong time any more.
+
+                Just enjoy Indian Cars Simulator 3D PC on the large screen for free！<span
+                    id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="Indian-Cars-Simulator-3D-v23-Mod-ModCombo.Com.apk" download>Click Here To
+            Download Gardenscapes Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="kinemaster logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Kinemaster hack mod apk</p>
+            <p class="text-content">KineMaster provides you with thousands of trending video templates. Swipe through
+                them on the Mix screen and pick one to create your own special video, fast and easy! Templates are ready
+                for YouTube, Tiktok, Instagram, and other social media platforms.<span id="dots-partsixth"></span><span
+                    id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="kinemaster-mod-apk.apk" download>Click Here To
+            Download Kinemaster Mod Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="MX-Player-logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">MX Player hack mod apk</p>
+            <p class="text-content">MX Player is an Indian video streaming and video on demand platform, developed by MX
+                Media & Entertainment platform currently operates on an ad-supported model. This video streaming app has
+                a streaming library of over 150,000 hours in 11 languages. It is available on iOS, Android and the
+                web.<span id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="mxplayer_v1.55.3_x86_64.apk" download>Click Here To
+            Download MX Player Mod Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="GTA5-logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto - V</p>
+            <p class="text-content">Grand Theft Auto V is an action-adventure game played from either a third-person or
+                first-person perspective. Players complete missions—linear scenarios with set objectives—to progress
+                through the story. Outside of the missions, players may freely roam the open world.<span
+                    id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="GTA5.apk" download>Click Here To
+            Download GTA - V Mod Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="my mni mart logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">My Mini Mart Hack Mod Apk</p>
+            <p class="text-content">My Mini Mart is a fun action and management game where you're in charge of all the
+                production and sales that go into running a small supermarket. Start by picking tomatoes from your
+                garden and selling them to your neighbors, improving your store every step of the way.<span
+                    id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="my-mini-mart-mod_1.18.19.apk" download>Click Here To
+            Download My mini mart Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="picsart logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">PicsArt Hack Mod Apk</p>
+            <p class="text-content">The platform allows users to take and edit pictures and videos, draw with layers,
+                and share the images on Picsart and other social networks. It is one of the world's most popular apps,
+                with reportedly more than 1 billion downloads across 180 countries.<span
+                    id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="PicsArt_v21.9.1_MOD.apk" download>Click Here To
+            Download PicsArt Hack Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="real racing logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Real Racing - 3 Mod Apk</p>
+            <p class="text-content">Real Racing 3 is a 2013 racing game developed by Firemonkeys Studios and published
+                by Electronic Arts for iOS, Android, Nvidia Shield and BlackBerry 10 devices. It was released on iOS and
+                Android on February 28, 2013, under the freemium business model; it was free to download, with
+                enhancements available through in-app purchases. It was considered that it had one of the best graphical
+                experience at that time. Over time and despite an expensive virtual economy ingame, the developers began
+                to tolerate the use of playing with time zones in order for the players to watch unlimited ads to get
+                free gold.<span id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="PicsArt_v21.9.1_MOD.apk" download>Click Here To
+            Download Real Racing Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="stupid zombies logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Stupid Zombies Mod Apk</p>
+            <p class="text-content">Stupid Zombies is an arcade game along the lines of 'Angry Birds' in which you
+                substitute the birds with a shotgun that you use to shoot all of the zombies on each level. The goal of
+                each level of Stupid Zombies is to kill all of the enemies.<span id="dots-partsixth"></span><span
+                    id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="Stupid-Zombies-(MOD).apk" download>Click Here To
+            Download Stupid Zombies Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="subway-surfers.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Subway Surfers old version Hack Mod Apk</p>
+            <p class="text-content">Subway Surfers is an endless runner mobile game which is co-developed by Kiloo and
+                SYBO Games, private companies based in Denmark. It is available on Android, iOS, HarmonyOS, Kindle, and
+                Windows Phone platforms and uses the Unity game engine.<span id="dots-partsixth"></span><span
+                    id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="Subway-Surfers-v3.9.0.apk" download>Click Here To
+            Download Subway Surfers Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="ss latest .png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Subway Surfers latest version Hack Mod Apk</p>
+            <p class="text-content">Subway Surfers is an endless runner mobile game which is co-developed by Kiloo and
+                SYBO Games, private companies based in Denmark. It is available on Android, iOS, HarmonyOS, Kindle, and
+                Windows Phone platforms and uses the Unity game engine.<span id="dots-partsixth"></span><span
+                    id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="subway-surfers-mod_3.16.1.apk" download>Click Here To
+            Download Subway Surfers Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="leps world logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Lep's World - 3 Hack Mod Apk</p>
+            <p class="text-content">Lep's World 3 (MOD, Unlimited Money) - 2D runner in the style of the famous game -
+                Mario. The trolls have stolen all the gold from the elves, and your task is to return it back, passing
+                many colorful levels, of which more than 120. You will play a leprechaun named Lep, move across
+                different worlds to return gold back and bring harmony to the settlement.<span
+                    id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="leps-world-3-mod.apk" download>Click Here To
+            Download Leps World Mod Apk</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="tomb of mask logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Tomb Of Mask Hack Mod Apk</p>
+            <p class="text-content">Tomb of the Mask is an arcade game with an infinite procedurally generated vertical
+                labyrinth. Seeking for adventure you get into a tomb where you find a strange mask. You put it on and
+                suddenly realize that you can now climb walls - easily and promptly. And that's when all the fun
+                begins.<span id="dots-partsixth"></span><span id="more-partsixth">
+                </span>
+            </p>
+        </div>
+    </div>
+    <button class="bluestacksproceed"><a href="tomb-of-the-mask-mod.apk" download>Click Here To
+            Download Tomb Of Mask Apk</a></button>
+
+    <div class="last-footer">
+        <p>Created By<a href="textglitch.html"> Abdul Ahad</a> | &copy;All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

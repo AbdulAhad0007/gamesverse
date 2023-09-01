@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Games From This site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .progress {
+            background-color: blue;
+            height: 2px;
+            animation: load 2s ease-in-out 1;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0vw;
+
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+
+        header {
+            display: flex;
+            margin: 5px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+
+        header .left-header {
+            float: left;
+        }
+
+        header .left-header h1 {
+
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        header .right-header {
+            margin-top: 10px;
+            margin-left: 510px;
+        }
+
+        header .right-header input {
+            width: 250px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid darkslateblue;
+        }
+
+        .about-container {
+            margin: 20px 20px 0 0;
+            border: 5px solid #fff;
+            overflow: auto
+        }
+
+        .left-content {
+            float: left
+        }
+
+        .left-content img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+        }
+
+        .right-content {
+            margin-left: 210px;
+            font-size: 20px;
+        }
+
+        .right-content .text-title {
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 23px;
+            font: bolder;
+        }
+
+        #more {
+            display: none;
+        }
+
+        #myBtn {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsec {
+            display: none;
+        }
+
+        #myBtn-partsec {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsec:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partthd {
+            display: none;
+        }
+
+        #myBtn-partthd {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partthd:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partfrth {
+            display: none;
+        }
+
+        #myBtn-partfrth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partfrth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partffth {
+            display: none;
+        }
+
+        #myBtn-partffth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partffth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsixth {
+            display: none;
+        }
+
+        #myBtn-partsixth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsixth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsevnth {
+            display: none;
+        }
+
+        #myBtn-partsevnth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsevnth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-parteigth {
+            display: none;
+        }
+
+        #myBtn-parteigth {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-parteigth:hover {
+            margin-left: 45vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        .zombishoterproceed {
+            margin-left: 33vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: #fff;
+            padding: 5px;
+            border-radius: 6px;
+
+        }
+
+        .zombishoterproceed a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .zombishoterproceed a:hover {
+            text-decoration: none;
+            color: darkslateblue;
+        }
+
+        .zombishoterproceed:hover {
+            margin-left: 33vw;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+
+        }
+
+        .last-footer {
+            height: 40px;
+            background-color: black;
+            color: aliceblue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 1px;
+        }
+
+        .last-footer p {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .last-footer a {
+            text-decoration: underline;
+            color: red;
+        }
+
+        @media (max-width:1148px) {
+            header .right-header {
+                display: none;
+            }
+        }
+
+        @media (max-width:947px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 200;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .zombishoterproceed {
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 150;
+                background-color: darkslateblue;
+                color: #fff;
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .zombishoterproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .zombishoterproceed a:hover {
+                text-decoration: none;
+                color: darkslateblue;
+            }
+
+            .zombishoterproceed:hover {
+                font-size: 16px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 150;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+
+        @media (max-width:690px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 200;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .zombishoterproceed {
+                margin-left: 160px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: #fff;
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .zombishoterproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .zombishoterproceed a:hover {
+                text-decoration: none;
+                color: darkslateblue;
+            }
+
+            .zombishoterproceed:hover {
+                margin-left: 160px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+
+        @media (max-width:500px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 80vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            header .right-header input {
+                width: 250px;
+                height: 30px;
+                font-size: 19px;
+                border: 1px solid darkslateblue;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 10px;
+            }
+
+            .right-content {
+                margin-left: 100px;
+                font-size: 17px;
+            }
+
+            .right-content .text-title {
+                font-weight: 150;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 18px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-parteigth {
+                display: none;
+            }
+
+            #myBtn-parteigth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-parteigth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .zombishoterproceed {
+                margin-left: 100px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: #fff;
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .zombishoterproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .zombishoterproceed a:hover {
+                text-decoration: none;
+                color: darkslateblue;
+            }
+
+            .zombishoterproceed:hover {
+                margin-left: 100px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 30px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsec() {
+            var dots = document.getElementById("dots-partsec");
+            var moreText = document.getElementById("more-partsec");
+            var btnText = document.getElementById("myBtn-partsec");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartthd() {
+            var dots = document.getElementById("dots-partthd");
+            var moreText = document.getElementById("more-partthd");
+            var btnText = document.getElementById("myBtn-partthd");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartfrth() {
+            var dots = document.getElementById("dots-partfrth");
+            var moreText = document.getElementById("more-partfrth");
+            var btnText = document.getElementById("myBtn-partfrth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartffth() {
+            var dots = document.getElementById("dots-partffth");
+            var moreText = document.getElementById("more-partffth");
+            var btnText = document.getElementById("myBtn-partffth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsixth() {
+            var dots = document.getElementById("dots-partsixth");
+            var moreText = document.getElementById("more-partsixth");
+            var btnText = document.getElementById("myBtn-partsixth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsevnth() {
+            var dots = document.getElementById("dots-partsevnth");
+            var moreText = document.getElementById("more-partsevnth");
+            var btnText = document.getElementById("myBtn-partsevnth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionparteigth() {
+            var dots = document.getElementById("dots-parteigth");
+            var moreText = document.getElementById("more-parteigth");
+            var btnText = document.getElementById("myBtn-parteigth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <div class="left-header">
+            <h1>Need For Speed All Type Games</h1>
+        </div>
+        <div class="right-header"><input type="text" placeholder="Search.."></div>
+
+    </header>
+    <div class="about-container">
+        <div class="left-content">
+            <img src="nfsmw logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Need for Speed - Most Wanted (Demo Version)</p>
+            <p class="text-content">Need for Speed: Most Wanted is a 2005 open-world racing video game, and the ninth
+                installment in the Need for Speed series. Developed by EA Canada and EA Black Box and published by
+                Electronic Arts, it was released in November 2005 for PlayStation 2, Xbox, GameCube, Nintendo DS,
+                Microsoft Windows, Game Boy Advance and Xbox 360. An additional version, Need for Speed: Most Wanted
+                5-1-0, was released in<span id="dots">...</span><span id="more">the same year for
+                    PlayStation Portable. The game focuses on street racing-oriented gameplay involving a selection of
+                    events and racing circuits found within the fictional city of Rockport, with the game's main story
+                    involving players taking on the role of a street racer who must compete against 15 of the city's
+                    most elite street racers to become the most wanted racer of the group, in the process seeking
+                    revenge against one of the groups who took their car and developing a feud with the city's police
+                    department.
+
+                    Most Wanted brought in many notable improvements and additions over other entries in the series, its
+                    major highlight being more in-depth police pursuits</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunction()" id="myBtn">Read more</button><br><br>
+    <div class="download">
+        <button class="zombishoterproceed" id="downloadButton">Click Here To Download NFS-Most Wanted</button>
+        <a href="nfsmw.exe" download></a>
+    </div>
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function () {
+            var countdown = 15;
+            var timer = setInterval(function () {
+                countdown--;
+                if (countdown <= 0) {
+                    clearInterval(timer);
+                    window.location.href = document.querySelector(".download a").getAttribute("href");
+                }
+                document.getElementById("downloadButton").textContent = "Please Wait , Downloading in " + countdown + " seconds";
+            }, 1000);
+        });
+    </script>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="need-for-speed-2-logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Need For Speed SE II</p>
+            <p class="text-content">Need for Speed II was developed by EA Canada. The lead programmer for the game was
+                Laurent Ancessi with Wei Shoong Teh and Brad Gour as senior programmers.
+
+                EA abandoned the Road & Track license used with the original game in favor of licensing with each
+                automobile manufacturer individually.<span id="dots-partsec">...</span><span id="more-partsec">Need for
+                    Speed II was met with mixed reviews. Aggregating review websites GameRankings and Metacritic gave
+                    the PlayStation version 71.39% and 71/100and the PC version 68.25%.Critics were universally
+                    impressed with the selection of expensive cars and the huge number of tracks.However, most found
+                    that other issues interfered with enjoyment of the game.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsec()" id="myBtn-partsec">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="nfsse2.html">Click Here To Download Need for Speed SE</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="Need_for_Speed_-_Porsche_Unleashed.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Need for Speed - Porsche Unleashed</p>
+            <p class="text-content">Need for Speed: Porsche Unleashed gives the player the opportunity to race Porsche
+                cars (including 3 race cars) throughout a range of tracks located in Europe. There are two career modes,
+                an evolution mode, where the player starts with Porsche cars made in 1950<span
+                    id="dots-partthd">...</span><span id="more-partthd">with the first 356 and ends with Porsche cars
+                    made in 2000 with the 996 and factory driver mode, where the player goes through a series of events
+                    like slalom, stunts, and races, using Porsche cars preselected for each event. The player can
+                    customize their cars drawing from an in-depth catalog of different Porsche as well as aftermarket
+                    parts. Unlike previous games in the series, there are no pursuit modes in the Windows
+                    version.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartthd()" id="myBtn-partthd">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="nfsporcheun.html">Click Here To Download Porsche Unleashed</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="NFSHP2.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Need For Speed Hot Pursuit 2</p>
+            <p class="text-content">Need for Speed: Hot Pursuit 2 is a 2002 racing video game, the sixth installment in
+                the Need for Speed series and the sequel to 1998's Need for Speed III: Hot Pursuit. It was developed by
+                EA Black Box for the PlayStation 2, and by EA Seattle for GameCube, Xbox, and Microsoft Windows. It
+                features cars from various high-performance and exotic car manufacturers. Players can compete in races
+                using these cars, or opt to play as a police officer and pursue speeders.<span
+                    id="dots-partfrth">...</span><span id="more-partfrth">Need for Speed: Hot Pursuit 2 is a racing game
+                    with an emphasis on evading the police and over-the-top courses featuring lengthy shortcuts. It
+                    draws primarily from the gameplay and style of one of its predecessors, Need for Speed III: Hot
+                    Pursuit. Two primary game modes are offered: World Racing Championship, in which the player competes
+                    against other drivers in a series of races, and Hot Pursuit Ultimate Racer, which adds police to the
+                    races. In the latter players must complete the races while also evading capture.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartfrth()" id="myBtn-partfrth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="nfshotprsut.html">Click Here To Download NFS Hot pursuit 2</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="nfsshift.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Need For Speed Shift</p>
+            <p class="text-content">Need for Speed: Shift is the thirteenth installment of the racing video game
+                franchise Need for Speed. It was developed by Slightly Mad Studios in conjunction with EA Bright Light
+                and published by Electronic Arts for Microsoft Windows, PlayStation 3, Xbox 360, PlayStation Portable,
+                Android, iOS, Symbian, Windows Mobile, MeeGo and J2ME in 2009.<span id="dots-partffth">...</span><span
+                    id="more-partffth">The game spent two years in development.The game was unveiled as part of a
+                    three-game announcement that included Need for Speed: Nitro and Need for Speed: World.
+
+                    The soundtrack of Shift remains similar to that of Need for Speed: ProStreet, featuring a scored
+                    soundtrack rather than a general track list as is seen in previous titles such as Need for Speed:
+                    Most Wanted, and Need for Speed: Carbon.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartffth()" id="myBtn-partffth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="nfsshift.html">Click Here To Download Need for speed Shift</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="nfsmw logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Need For Speed Most Wanted Black Edition</p>
+            <p class="text-content">The Black Edition is a special collector's edition of Need for Speed: Most Wanted
+                released in celebration of the tenth anniversary of the Need for Speed series.
+                The Black Edition features additional events, bonus cars, three bonus vinyls, and a special challenge
+                series event.<span id="dots-partsixth">...</span><span id="more-partsixth">It also comes included with a
+                    special feature DVD that contains interviews and videos relating to the development of the game.
+
+                    It was made available for the PC, PlayStation 2, and Xbox releases in North America, but was only
+                    made available for the PlayStation 2 release in Europe.
+                </span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsixth()" id="myBtn-partsixth">Read more</button><br><br>
+    <button class="zombishoterproceed"><a href="nfsmw.html">Click Here To Download NFS-Most wanted</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="last-footer">
+        <p>Created By<a href="textglitch.html">Abdul Ahad</a>| &copy;All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

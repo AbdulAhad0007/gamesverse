@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMESVERSE CLOUD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .heading {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .heading span {
+            font-size: 24px;
+        }
+
+        .cloud {
+            color: #00aaff;
+        }
+
+        .details {
+            background-color: #f7f7f7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .download {
+            text-align: center;
+        }
+
+        .download button {
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .download button:hover {
+            background-color: #0088dd;
+        }
+
+        @media (max-width: 600px) {
+            .heading {
+                font-size: 20px;
+            }
+
+            .details {
+                font-size: 14px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="heading">
+        <span>&#9729;</span>UPLOADSHELL<p class="cloud">CLOUD</p>
+    </div>
+    <div class="details">
+        <p>---Download Windows 8.1 64Bit ---<br>
+            after downloading extract the rar file using <a href="winrar-x64-623.exe" download>Winrar</a> or use 7zip.
+        </p>
+        <p class="size">File Size : 4.02 GB</p>
+    </div>
+    <div class="download">
+        <button id="downloadButton">Download</button>
+        <a href="Win8.1_English_x64.iso"></a>
+    </div>
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function () {
+            var countdown = 15;
+            var timer = setInterval(function () {
+                countdown--;
+                if (countdown <= 0) {
+                    clearInterval(timer);
+                    window.location.href = document.querySelector(".download a").getAttribute("href");
+                }
+                document.getElementById("downloadButton").textContent = "Downloading in " + countdown + " seconds";
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

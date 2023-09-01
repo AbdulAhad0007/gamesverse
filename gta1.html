@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <title>Grand Theft Auto - I</title>
+    <style>
+        * {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 5px 5px 0 5px;
+        }
+
+        .heading1 {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .min-specs h3 {
+            font-size: 30px;
+        }
+
+        .max-specs h3 {
+            font-size: 30px;
+        }
+
+        .min-specs th,
+        td {
+            font-size: 22px;
+        }
+
+        .max-specs th {
+            font-size: 22px;
+        }
+
+        marquee {
+            background-color: darkgrey;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .paragraph p {
+            font-size: 32px;
+            font-family: cursive;
+        }
+
+        .gta-vc-game {
+            margin-left: 500px;
+        }
+
+        .gta-vc-game button {
+            background-color: rgb(51, 102, 255);
+            color: aliceblue;
+            font-size: 25px;
+            padding: 4px;
+            border-radius: 8px;
+            border: 2px solid rgb(51, 102, 255);
+        }
+
+        .gta-vc-game button:hover {
+            background-color: white;
+            color: rgb(51, 102, 255);
+            font-size: 25px;
+            padding: 4px;
+            border-radius: 8px;
+            border: 2px solid rgb(51, 102, 255);
+        }
+
+        .last-footer {
+            height: 40px;
+            background-color: black;
+            color: aliceblue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 1px;
+        }
+
+        .last-footer p {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .last-footer a {
+            text-decoration: underline;
+            color: red;
+        }
+
+        .screenshots {
+            width: 100%;
+            display: flex;
+        }
+
+        .screenshots img {
+            width: 300px;
+            height: 300px;
+        }
+
+        @media (max-width:947px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background: url("gta\ vc\ main\ cover.png")no-repeat;
+                background-size: cover;
+            }
+
+            .heading h1 {
+                text-align: center;
+                font-size: 24px;
+                color: aliceblue;
+            }
+
+            .heading h2 {
+                color: darkblue;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .img-content img {
+                margin-left: 80px;
+                width: 80%;
+            }
+
+            .min-specs h3 {
+                font-size: 20px;
+            }
+
+            .max-specs h3 {
+                font-size: 20px;
+            }
+
+            .min-specs th,
+            td {
+                font-size: 18px;
+            }
+
+            .max-specs th {
+                font-size: 18px;
+            }
+
+            marquee {
+                background-color: darkgrey;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            .paragraph p {
+                font-size: 20px;
+                font-family: cursive;
+            }
+
+            .gta-vc-game {
+                margin-left: 220px;
+            }
+
+            .gta-vc-game button {
+                background-color: rgb(51, 102, 255);
+                color: aliceblue;
+                font-size: 19px;
+                padding: 4px;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 102, 255);
+            }
+
+            .gta-vc-game button:hover {
+                background-color: white;
+                color: rgb(51, 102, 255);
+                font-size: 19px;
+                padding: 4px;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 102, 255);
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+
+            .screenshots {
+                width: 100%;
+                display: flex;
+            }
+
+            .screenshots img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width:690px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background: url("gta\ 3\ main\ cover\ image.jpg")no-repeat;
+                background-size: cover;
+            }
+
+            .heading h1 {
+                text-align: center;
+                font-size: 20px;
+                color: aliceblue;
+            }
+
+            .heading h2 {
+                color: darkblue;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .img-content img {
+                margin-left: 80px;
+                width: 80%;
+            }
+
+            .min-specs h3 {
+                font-size: 20px;
+            }
+
+            .max-specs h3 {
+                font-size: 20px;
+            }
+
+            .min-specs th,
+            td {
+                font-size: 15px;
+            }
+
+            .max-specs th {
+                font-size: 15px;
+            }
+
+            marquee {
+                background-color: darkgrey;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+
+            .paragraph p {
+                font-size: 19px;
+                font-family: cursive;
+            }
+
+            .gta-vc-game {
+                margin-left: 200px;
+            }
+
+            .gta-vc-game button {
+                background-color: rgb(51, 102, 255);
+                color: aliceblue;
+                font-size: 19px;
+                padding: 4px;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 102, 255);
+            }
+
+            .gta-vc-game button:hover {
+                background-color: white;
+                color: rgb(51, 102, 255);
+                font-size: 19px;
+                padding: 4px;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 102, 255);
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+
+            .screenshots {
+                width: 100%;
+                display: flex;
+            }
+
+            .screenshots img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width:500px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .header {
+                background: url("gta\ 3\ main\ cover\ image.jpg")no-repeat;
+                background-size: cover;
+            }
+
+            .heading h1 {
+                text-align: center;
+                font-size: 20px;
+                color: aliceblue;
+                background-color: lightblue;
+            }
+
+            .heading h2 {
+                color: darkblue;
+                background-color: #fff;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            .img-content img {
+                margin-left: 50px;
+                width: 80%;
+            }
+
+            .min-specs h3 {
+                font-size: 20px;
+            }
+
+            .max-specs h3 {
+                font-size: 20px;
+            }
+
+            .min-specs th,
+            td {
+                font-size: 15px;
+            }
+
+            .max-specs th {
+                font-size: 15px;
+            }
+
+            marquee {
+                background-color: darkgrey;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 10px;
+            }
+
+            .paragraph p {
+                font-size: 19px;
+                font-family: cursive;
+            }
+
+            .gta-vc-game {
+                margin-left: 140px;
+            }
+
+            .gta-vc-game button {
+                background-color: rgb(51, 102, 255);
+                color: aliceblue;
+                font-size: 19px;
+                padding: 4px;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 102, 255);
+            }
+
+            .gta-vc-game button:hover {
+                background-color: white;
+                color: rgb(51, 102, 255);
+                font-size: 19px;
+                padding: 4px;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 102, 255);
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 3px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+
+            .screenshots {
+                width: 100%;
+                display: flex;
+            }
+
+            .screenshots img {
+                width: 120px;
+                height: 100px;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var downloadButton = document.querySelector(".main-game-part button");
+
+            downloadButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Disable the download button temporarily
+                downloadButton.disabled = true;
+
+                // Set a timeout to simulate the delay before the download
+                setTimeout(function () {
+                    // Re-enable the button
+                    downloadButton.disabled = false;
+
+                    // Trigger the download by clicking the link
+                    var downloadLink = document.querySelector(".main-game-part a");
+                    downloadLink.click();
+                }, 15000); // Delay in milliseconds (3 seconds)
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <h1 class="heading1">GTA I by Rockstar Games</h1>
+    <marquee behavior="alternate" direction="right" scrollamount="5">
+        <h1>Scroll Below to Continue Download</h1>
+    </marquee>
+    <div class="specification">
+        <div class="min-specs">
+            <h3>Minimum System Requirements:</h3>
+            <table>
+                <tr>
+                    <td>1 .</td>
+                    <th>Operating Sysyem</th>
+                    <td>:</td>
+                    <td>DOS 6.0, Windows 95, Windows 98</td>
+                </tr>
+                <tr>
+                    <td>2 .</td>
+                    <th>Processor</th>
+                    <td>:</td>
+                    <td>75 MHz Pentium or equivalent.</td>
+                </tr>
+                <tr>
+                    <td>3 .</td>
+                    <th>Memory</th>
+                    <td>:</td>
+                    <td>16 Mb of RAM.</td>
+                </tr>
+                <tr>
+                    <td>4 .</td>
+                    <th>Graphics</th>
+                    <td>:</td>
+                    <td>1MB VESA compatible SVGA graphics card</td>
+                </tr>
+                <tr>
+                    <td>5 .</td>
+                    <th>DirectX Version</th>
+                    <td>:</td>
+                    <td>Any Version Of Microsoft</td>
+                </tr>
+                <tr>
+                    <td>6 .</td>
+                    <th>Hard Drive</th>
+                    <td>:</td>
+                    <td>80 MB of Hard Disk Space.</td>
+                </tr>
+            </table>
+        </div>
+        <div class="max-specs">
+            <h3>Recommended System Requirements :</h3>
+            <table>
+                <tr>
+                    <td>1 .</td>
+                    <th>Processor</th>
+                    <td>:</td>
+                    <td>75 MHz Pentium</td>
+                </tr>
+                <tr>
+                    <td>2 .</td>
+                    <th>Memory</th>
+                    <td>:</td>
+                    <td>1 GB (the more the better!)</td>
+                </tr>
+                <tr>
+                    <td>3 .</td>
+                    <th>Graphics</th>
+                    <td>:</td>
+                    <td>Anyone of you want</td>
+                </tr>
+                <tr>
+                    <td>4 .</td>
+                    <th>DirectX Version</th>
+                    <td>:</td>
+                    <td> Microsoft DirectX® 8.1</td>
+                </tr>
+                <tr>
+                    <td>5 .</td>
+                    <th>Hard Drive</th>
+                    <td>:</td>
+                    <td>2 GB of free hard disk space</td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <div class="paragraph">
+        <p><b>&rArr;</b>Screen Shots--></p>
+    </div>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gta1 scr1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="gta1 scr2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="gta1 scr3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="gta1 scr4.jfif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="paragraph">
+        <p><b>&rArr;</b> Download The rar file and extract it using winrar(<a href="winrar-x64-623.exe">64 bit</a>/<a
+                href="winrar-x32-623.exe">32 bit</a>) or 7zip(<a href="7z2301-x64.exe" download>64 bit</a>/<a
+                href="7z2301.exe" download>32 bit</a>) or any other file extractor, After
+            extracting open the file/folder and install the exe file.Now,Your game will start and you can enjoy now.
+        </p>
+    </div> <br>
+    <div class="main-game-part">
+        <div class="gta-vc-game">
+            <a href="GrandTheftAuto1997.rar" download><button onclick="wait()">&#8595; Download The Game
+                    File</button></a>
+        </div>
+    </div>
+    <script>
+        function wait() {
+            alert("Now wait for 15 seconds to automatically download the Game!")
+        }
+    </script>
+
+</body>
+
+</html>

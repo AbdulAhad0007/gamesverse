@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Games From This site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Prompt:wght@600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .progress {
+            background-color: blue;
+            height: 2px;
+            animation: load 2s ease-in-out 1;
+        }
+
+        @keyframes load {
+            0% {
+                width: 0vw;
+
+            }
+
+            50% {
+                width: 60vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+
+        }
+
+        header {
+            display: flex;
+            margin: 5px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+
+        header .left-header {
+            float: left;
+        }
+
+        header .left-header h1 {
+
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        header .right-header {
+            margin-top: 10px;
+            margin-left: 510px;
+        }
+
+        header .right-header input {
+            width: 250px;
+            height: 30px;
+            font-size: 20px;
+            border: 1px solid darkslateblue;
+        }
+
+        .about-container {
+            margin: 20px 20px 0 0;
+            border: 5px solid #fff;
+            overflow: auto
+        }
+
+        .left-content {
+            float: left
+        }
+
+        .left-content img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin-left: 40px;
+        }
+
+        .right-content {
+            margin-left: 210px;
+            font-size: 20px;
+        }
+
+        .right-content .text-title {
+            font-weight: 200;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 23px;
+            font: bolder;
+        }
+
+        #more {
+            display: none;
+        }
+
+        #myBtn {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsec {
+            display: none;
+        }
+
+        #myBtn-partsec {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsec:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partthd {
+            display: none;
+        }
+
+        #myBtn-partthd {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partthd:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partfrth {
+            display: none;
+        }
+
+        #myBtn-partfrth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partfrth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partffth {
+            display: none;
+        }
+
+        #myBtn-partffth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partffth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsixth {
+            display: none;
+        }
+
+        #myBtn-partsixth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsixth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        #more-partsevnth {
+            display: none;
+        }
+
+        #myBtn-partsevnth {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 6px;
+        }
+
+        #myBtn-partsevnth:hover {
+            margin-left: 650px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+        }
+
+        .gtavcproceed {
+            margin-left: 540px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: darkslateblue;
+
+            padding: 5px;
+            border-radius: 6px;
+
+        }
+
+        .gtavcproceed a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .gtavcproceed a:hover {
+            text-decoration: none;
+            color: darkslateblue;
+        }
+
+        .gtavcproceed:hover {
+            margin-left: 550px;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aliceblue;
+            color: darkslateblue;
+            padding: 5px;
+            border: 2px solid darkslateblue;
+            border-radius: 6px;
+
+        }
+
+        .last-footer {
+            height: 40px;
+            background-color: black;
+            color: aliceblue;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 1px;
+        }
+
+        .last-footer p {
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .last-footer a {
+            text-decoration: underline;
+            color: red;
+        }
+
+        @media (max-width:690px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 75vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 20px;
+            }
+
+            .right-content {
+                margin-left: 210px;
+                font-size: 18px;
+            }
+
+            .right-content .text-title {
+                font-weight: 200;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 20px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 240px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .gtavcproceed {
+                margin-left: 160px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .gtavcproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .gtavcproceed a:hover {
+                text-decoration: none;
+                color: darkslateblue;
+            }
+
+            .gtavcproceed:hover {
+                margin-left: 160px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 40px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+
+        @media (max-width:500px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                background: #888;
+            }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555;
+            }
+
+            .progress {
+                background-color: blue;
+                height: 2px;
+                animation: load 2s ease-in-out 1;
+            }
+
+            @keyframes load {
+                0% {
+                    width: 0vw;
+
+                }
+
+                75% {
+                    width: 80vw;
+                }
+
+                100% {
+                    width: 100vw;
+                }
+
+            }
+
+            header {
+                display: flex;
+                margin: 5px;
+                overflow: hidden;
+                padding-left: 5px;
+            }
+
+            header .left-header {
+                float: left;
+            }
+
+            header .left-header h1 {
+
+                font-family: 'Kanit', sans-serif;
+                font-family: 'Prompt', sans-serif;
+            }
+
+            header .right-header {
+                display: none;
+            }
+
+            header .right-header input {
+                width: 250px;
+                height: 30px;
+                font-size: 19px;
+                border: 1px solid darkslateblue;
+            }
+
+            .about-container {
+                margin: 20px 20px 0 0;
+                border: 5px solid #fff;
+                overflow: auto
+            }
+
+            .left-content {
+                float: left
+            }
+
+            .left-content img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                margin-left: 10px;
+            }
+
+            .right-content {
+                margin-left: 100px;
+                font-size: 17px;
+            }
+
+            .right-content .text-title {
+                font-weight: 150;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                font-size: 18px;
+                font: bolder;
+            }
+
+            #more {
+                display: none;
+            }
+
+            #myBtn {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsec {
+                display: none;
+            }
+
+            #myBtn-partsec {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsec:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partthd {
+                display: none;
+            }
+
+            #myBtn-partthd {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partthd:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partfrth {
+                display: none;
+            }
+
+            #myBtn-partfrth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partfrth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partffth {
+                display: none;
+            }
+
+            #myBtn-partffth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partffth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsixth {
+                display: none;
+            }
+
+            #myBtn-partsixth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsixth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            #more-partsevnth {
+                display: none;
+            }
+
+            #myBtn-partsevnth {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+                color: aliceblue;
+                padding: 5px;
+                border-radius: 6px;
+            }
+
+            #myBtn-partsevnth:hover {
+                margin-left: 220px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+            }
+
+            .gtavcproceed {
+                margin-left: 140px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: darkslateblue;
+
+                padding: 5px;
+                border-radius: 6px;
+
+            }
+
+            .gtavcproceed a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .gtavcproceed a:hover {
+                text-decoration: none;
+                color: darkslateblue;
+            }
+
+            .gtavcproceed:hover {
+                margin-left: 140px;
+                font-size: 19px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 200;
+                background-color: aliceblue;
+                color: darkslateblue;
+                padding: 5px;
+                border: 2px solid darkslateblue;
+                border-radius: 6px;
+
+            }
+
+            .last-footer {
+                height: 30px;
+                background-color: black;
+                color: aliceblue;
+                margin-left: 0;
+                margin-right: 0;
+                padding: 1px;
+            }
+
+            .last-footer p {
+                text-align: center;
+                box-sizing: border-box;
+            }
+
+            .last-footer a {
+                text-decoration: underline;
+                color: red;
+            }
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsec() {
+            var dots = document.getElementById("dots-partsec");
+            var moreText = document.getElementById("more-partsec");
+            var btnText = document.getElementById("myBtn-partsec");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartthd() {
+            var dots = document.getElementById("dots-partthd");
+            var moreText = document.getElementById("more-partthd");
+            var btnText = document.getElementById("myBtn-partthd");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartfrth() {
+            var dots = document.getElementById("dots-partfrth");
+            var moreText = document.getElementById("more-partfrth");
+            var btnText = document.getElementById("myBtn-partfrth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartffth() {
+            var dots = document.getElementById("dots-partffth");
+            var moreText = document.getElementById("more-partffth");
+            var btnText = document.getElementById("myBtn-partffth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsixth() {
+            var dots = document.getElementById("dots-partsixth");
+            var moreText = document.getElementById("more-partsixth");
+            var btnText = document.getElementById("myBtn-partsixth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        function myFunctionpartsevnth() {
+            var dots = document.getElementById("dots-partsevnth");
+            var moreText = document.getElementById("more-partsevnth");
+            var btnText = document.getElementById("myBtn-partsevnth");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <header>
+        <div class="left-header">
+            <h1>Download All Type GTA Games</h1>
+        </div>
+        <div class="right-header"><input type="text" placeholder="Search.."></div>
+
+    </header>
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gta1.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto - I</p>
+            <p class="text-content">Grand Theft Auto is an action-adventure video game developed by DMA Design and
+                published by BMG Interactive. It is the first title of the Grand Theft Auto series and was released in
+                November 1997 for <span
+                    id="dots-partsixth">...</span><span id="more-partsixth">MS-DOS and Microsoft Windows, in December 1997 for the PlayStation and in October 1999
+                        for the Game Boy Color. The game's narrative follows a criminal who climbs in status within the criminal
+                        underworld across three fictional cities, inspired by real-life locations. The gameplay is presented
+                        from a top-down perspective and takes place within an open-world environment in which the player is not required to perform missions,
+                    although they are necessary to progress through the levels.
+
+                    Grand Theft Auto began development as a game titled Race 'n' Chase, in which the player controlled a
+                    police officer pursuing criminals. However, the game was considered dull, and the concept of playing
+                    as a criminal was adopted.The development team worked to ensure that the player would have the
+                    freedom to play however they intend. Grand Theft Auto created a great deal of controversy even
+                    before its launch due to its violent content, with discussions taking place in the British House of
+                    Lords about banning its sale.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsixth()" id="myBtn-partsixth">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="gta1.html">Click Here To Download GTA - I</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gta2.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto - II</p>
+            <p class="text-content">Grand Theft Auto 2 is an action-adventure game, developed by DMA Design and
+                published by Rockstar Games in October 1999,<span id="dots-partsevnth">...</span><span id="more-partsevnth"> for Microsoft Windows and the PlayStation, and the
+                    Dreamcast and Game Boy Color in 2000. It is the sequel to 1997's Grand Theft Auto, and the second main
+                    instalment of the Grand Theft Auto series. Set within a retrofuturistic metropolis known as "Anywhere
+                    City" the game focuses on players taking
+                    the role of a criminal as they roam an open world, conducting jobs for various crime syndicates and
+                    having free rein to do whatever they wish to achieve their goal. The game's intro is unique for a
+                    title in the series, as it involved live-action scenes filmed by Rockstar Games.
+
+                    Grand Theft Auto 2 received mixed reviews for most platforms, and negative reviews for the Game Boy
+                    Color, but was a moderate commercial success. While the soundtrack and some gameplay elements, such
+                    as the gang loyalty system, were praised, the graphics, controls, and setting received a more mixed
+                    game response.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsevnth()" id="myBtn-partsevnth">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="gta2.html">Click Here To Download GTA - II</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gtavc.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto: Vice City</p>
+            <p class="text-content"> is an action-adventure game played from a third-person
+                perspective. The player controls criminal Tommy Vercetti and completes missions—linear scenarios with
+                set
+                objectives—to progress through the story.<span id="dots">...</span><span
+                    id="more"> It is possible to have several missions available at a time,
+                    as some
+                    missions require the player to wait for further instructions or events. Outside of missions, the player
+                    can
+                    freely roam the game's open world and has the ability to complete optional side missions. Composed of
+                    two main
+                    islands and several smaller areas, the world is much larger in area than earlier entries in the
+                    series.The
+                    islands are unlocked for the player as the story progresses. The player
+                    may run, jump, or drive vehicles to navigate the game's world. The player uses melee attacks,
+                    firearms and
+                    explosives to fight enemies. The firearms include weapons such as the Colt Python, an M60 machine
+                    gun and a
+                    Minigun.The game's three-dimension environment allows a first-person view while aiming with the
+                    sniper rifle
+                    and rocket launcher. In addition, the game's combat allows the player to commit drive-by shootings
+                    by facing
+                    sideways in a vehicle. The game provides the player a wide variety of weapon options—they can be
+                    purchased
+                    from local firearms dealers, found on the ground, retrieved from dead enemies, or found around the
+                    city.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunction()" id="myBtn">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="gtavc.html">Click Here To Download GTA VC</a></button>
+
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gtasa.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto: San Andreas</p>
+            <p class="text-content">Grand Theft Auto: San Andreas is a 2004 action-adventure game developed by Rockstar
+                North and published by Rockstar Games.<span id="dots-partsec">...</span><span id="more-partsec">The game features references to
+                    many real-life elements of the world, such as its cities, regions, and landmarks, with its plot
+                    heavily based on several real-life events in Los Angeles in the early 1990s, including the rivalry
+                    between street gangs, the crack epidemic of the 1980s and early 1990s, the LAPD Rampart scandal, and
+                    the 1992 Los Angeles riots. San Andreas introduced gameplay elements that were incorporated in later
+                    games, including role-playing-style mechanics, customisation options with both clothing and vehicle
+                    appearances, a vast array of activities and mini-games, and the inclusion of gambling games.
+
+                    Considered by many reviewers to be one of the greatest video games ever made, San Andreas received
+                    critical acclaim upon release, with praise directed at its music, story and gameplay, and criticism
+                    for its graphics and some aspects of its controls.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartsec()" id="myBtn-partsec">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="gtasa.html">Click Here To Download GTA SA</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gta3 logo.png" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto: 3</p>
+            <p class="text-content"> Grand Theft Auto III is a 2001 action-adventure game developed by DMA Design and
+                published by Rockstar Games.<span
+                    id="dots-partthd">...</span><span id="more-partthd"> It is the third main entry in the Grand Theft Auto series, following 1999's
+                        Grand Theft Auto 2, and the fifth instalment overall. Set within the fictional Liberty City (loosely
+                        based on New York City), the story follows Claude, a silent protagonist who, after being betrayed and
+                        left for dead by his girlfriend during a robbery, embarks on a quest for revenge that leads him to
+                        become entangled in a world of crime, drugs, gang warfare, and corruption. The game is played Grand Theft Auto III received critical acclaim,
+                    with particular praise directed at its concept and gameplay. However, it also generated controversy,
+                    with criticism directed at its depictions of violence and sex. It became the best-selling video game
+                    of 2001, and sold over 14.5 million copies by March 2008.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartthd()" id="myBtn-partthd">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="gta3.html">Click Here To Download GTA III</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gta trilogy logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto: Trilogy - The Definitive Edition</p>
+            <p class="text-content"> Grand Theft Auto: The Trilogy – The Definitive Edition is a 2021 compilation of
+                three action-adventure games in the Grand Theft<span id="dots-partfrth">...</span><span
+                    id="more-partfrth"> Auto series: Grand Theft Auto III (2001), Grand Theft
+                    Auto: Vice City (2002), and Grand Theft Auto: San Andreas (2004). It was developed by Grove Street Games
+                    and published by Rockstar Games. All three games are remastered, with visual enhancements and gameplay
+                    upgrades. The games feature different protagonists and locations within the same continuity. Grand Theft
+                    Auto III follows silent protagonist Claude. The two-year development focused on maintaining the look and feel of the original
+                    games; the physics code was copied from the originals, and artificial intelligence was used to
+                    automatically upscale textures. The development team studied the distinctive qualities of the
+                    original games. They added several colouring, weathering, and lighting effects, as well as new
+                    assets from Grand Theft Auto V (2013). The team consulted with the original developers at Rockstar
+                    North when upgrading the character designs. Prior to release, existing versions of the three games
+                    were removed from sale from digital retailers, which led to criticism from audiences and
+                    journalists; in response, Rockstar restored the original versions on the Rockstar Store.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartfrth()" id="myBtn-partfrth">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="pagenotfound.html">Click To Download GTA Trilogy</a></button>
+    <!-- -------------------------------------------------------------------------------------------------------------------- -->
+    <div class="about-container">
+        <div class="left-content">
+            <img src="gta vc 2 logo.jpg" alt="">
+        </div>
+        <div class="right-content">
+            <p class="text-title">Grand Theft Auto: Vice City 2</p>
+            <p class="text-content">Grand Theft Auto: Vice City 2 is an open-world action-adventure game developed by
+                Rockstar Leeds and published by Rockstar Games.<span id="dots-partffth">...</span><span id="more-partffth">Grand Theft Auto: Vice City
+                    2 offers an open-world experience where players can freely roam around the city, take on various
+                    missions, and engage in various criminal activities. The game features a diverse range of missions
+                    that range from simple delivery missions to complex heists and assassinations. The controls are easy
+                    to use and allow for smooth navigation, shooting, and driving. The addition of new vehicles and
+                    weapons adds to the overall excitement of the game. The game also features a fun and engaging
+                    multiplayer mode that allows players to compete against each other in a range of different game
+                    modes.
+
+                    Grand Theft Auto: Vice City 2 has gameplay similar to Grand Theft Auto: Liberty City Stories, and
+                    Saints Row: The Third. Providing strong action themed around violence and crime, with a somewhat
+                    humorous satirical twist, you’ll find this game to be one of the better games the Grand Theft Auto
+                    franchise.
+
+                    If you are a big fan of GTA, this is both a fantastic game and a brilliant addition to the
+                    franchise. Its got everything you want to see in it and more.</span>
+            </p>
+        </div>
+    </div>
+    <button onclick="myFunctionpartffth()" id="myBtn-partffth">Read more</button><br><br>
+    <button class="gtavcproceed"><a href="gtavc2.html">Click Here To Download GTA VC 2</a></button>
+    <div class="last-footer">
+        <p>Created By<a href="textglitch.html">Abdul Ahad</a>| &copy;All Rights Reserved</p>
+    </div>
+</body>
+
+</html>
